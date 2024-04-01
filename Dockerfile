@@ -57,7 +57,7 @@ ENV SE_START_XVFB=true
 ENV DISPLAY=:99.0
 ENV DISPLAY_NUM=99
 
-ENV PORT=7860
+ENV PORT=8010
 ENV HEADLESS=false
 ENV BROWSER_BINARY=/usr/bin/microsoft-edge
 # ENV PASS_TIMEOUT=10
@@ -65,6 +65,6 @@ ENV BROWSER_BINARY=/usr/bin/microsoft-edge
 ENV XDG_CONFIG_HOME=/tmp/edge
 ENV XDG_CACHE_HOME=/tmp/edge
 
-EXPOSE 7860
+EXPOSE 8010
 
 CMD /usr/bin/supervisord -c /etc/supervisor/conf.d/supervisor.conf
